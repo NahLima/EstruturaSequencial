@@ -2,6 +2,7 @@
 # Imprima as consoantes.
 
 
+
 listaInput = []
 consoantes = 0
 vogal = 0
@@ -17,9 +18,20 @@ for i in range(10):
 		consoantes+=1
 	
 print(listaInput)
-print(f'Existem {consoantes} consoantes nesta lista') # contagem de consoantes
+print(f'Existem {consoantes} consoantes nesta lista ' ) # contagem de consoantes
 
-	
+# outra forma de se fazer
+
+lista=[]
+
+for item in range(0,10):
+	letra= input('Letra: ')
+
+	if letra not in ('a','e','i','o','u' ):
+		lista.append(letra)
+
+print(f'Foram digitadas{len(lista)} consoantes. São elas: {list(lista)}:')
+
 
 
 
